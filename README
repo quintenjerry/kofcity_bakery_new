@@ -1,0 +1,16 @@
+#This is an update from a collabrator - Manuel Kophie git-username:Mfii28
+
+- still working on the php database login bugs 
+
+- run app requirement 
+  - xammp installation 
+  - file dir - C:\xampp\htdocs\kofBake\kofcity_bakery_new\index.php
+  - http://localhost/kofBake/kofcity_bakery_new/index.php
+
+- import database to your phpmyadmin
+  - Database name - bakery
+  - sql file to be import is listed in the Database folder
+
+
+
+### THIS IS JUST AN UPDATE AD STILL WORKING ON FIXING SOME BUGS
