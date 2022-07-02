@@ -104,17 +104,6 @@ if (isset($_POST['login_user'])) {
   
 
   
-
-  if (!isset($_SESSION['username'])) {
-  	$_SESSION['msg'] = "You must log in first";
-  	header('location: signup_page.php');
-  }
-  if (isset($_GET['logout'])) {
-  	session_destroy();
-  	unset($_SESSION['username']);
-  	header("location: index.php");
-  }
- 
  
   ?>
  
