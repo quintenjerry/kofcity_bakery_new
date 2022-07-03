@@ -294,31 +294,25 @@ form .content label:hover {
             <img src="pic/bumasg.jpg" alt="">
 
         </div>
-        <form action="login.php" method="post">
+        <form method="post" action="signup_page.php">
             <div class="content">
                 <div class="login_form">
                     <div class="title">Login</div>
                     <div class="input_boxes">
-                    <?php if (isset($_GET['error'])) { ?>
-
-                            <p class="error"><?php echo $_GET['error']; ?></p>
-
-                         <?php } ?>
+                    <?php include('errors.php'); ?>
 
                         <div class="input_box">
-                            <i class="fas fa-envelope"></i>
-                            <input type="text" type="email" name="email"  placeholder="Email" required>
+                            <i class="fa fa-envelope"></i>
+                            <input type="text" type="username" name="username"  placeholder="Email" required>
                         </div>
                         <div class="input_box">
-                            <i class="fas fa-lock"></i>
+                            <i class="fa fa-lock"></i>
                             <input type="password" name="password" placeholder="Password">
                         </div>
                         <div class="ftext"><a href="#">Forget Password?</a></div>
-                        <div class="submit_button">
-                            <i class="fas fa-envelope"></i>
-                            <input type="submit" value="Enter">
-                        </div>
-                        <div class="text_login">Don't have an account?<label for="flip">       SignUp</label></div>
+                        <button type="submit" class="btn" name="login_user">Login</button>
+                       
+                        <div class="text_login">Don't have an account? <label for="flip">SignUp</label></div>
                     </div>
                 </div>
                 <br>
@@ -334,26 +328,24 @@ form .content label:hover {
                 <div class="input_boxes">
                 <?php include('errors.php'); ?>
                     <div class="input_box">
-                        <i class="fas fa-user"></i>
-                        <input type="text" name="username" value="<?php echo $username; ?>">
+                        <i class="fa fa-user"></i>
+                        <input type="username" name="username" value="<?php echo $username; ?>">
                     </div>
                     <div class="input_box">
-                        <i class="fas fa-envelope"></i>
+                        <i class="fa fa-envelope"></i>
                         <input type="email" name="email" value="<?php echo $email; ?>">
                     </div>
                     <div class="input_box">
-                        <i class="fas fa-envelope"></i>
+                        <i class="fa fa-lock"></i>
                         <input type="password" name="password_1">
                     </div>
                     <div class="input_box">
-                        <i class="fas fa-envelope"></i>
+                        <i class="fa fa-lock"></i>
                         <input type="password" name="password_2">
                     </div>
-                    <div class="submit_button">
-                        <i class="fas fa-envelope"></i>
-                        <input type="submit" value="Enter" class="btn" name="reg_user">
-                        
-                    </div>
+                    <div class="input-group">
+                <button type="submit" class="btn" name="reg_user">Register</button>
+                </div>
                     <div class="text_signup">Already have an account?<label for="flip">Login</label></div>
                 </div>
             </div>
